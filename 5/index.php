@@ -1,0 +1,279 @@
+<?php
+require('db.php');
+
+$items = $db->query("SELECT * FROM catalog")->fetchAll(PDO::FETCH_ASSOC);
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="amog.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="headers text">Главная</div>
+            <div class="headers text">О нас</div>
+            <div class="headers text">Помощь</div>
+            <div class="headers text">Санкт-Петербург</div>
+            <div class="telNumber text">+7 495 967 13 01</div>
+            <div class="profile">
+                <h1 class="headers"> Личный кабинет</h1>
+                <img src="imgs/iconProfile.svg" class="icon">
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <ul class = "menu mainCont">
+            <li class = "5">
+                <div class="container">
+                    <h1 class="h1 text">
+                        Страховая программa 
+                        <b>ЗАЩИТА +</b>
+                        
+                    </h1>
+                    <p class = "contP text">
+                        Одна из самых удобных и выгодных страховых программ предоставляемых грожанам России и иностранным гражданам.
+                    </p>
+                    <div class="button">
+                        <h2 class="buttonTXT text"><b>КУПИТЬ</b></h2>
+                    </div>
+                </div>
+                
+            </li>
+            <li>
+                <img src="imgs/annImg.svg" class="bigImage">
+            </li>
+        </ul>
+        <div class="center">
+            <h2 class="text">
+                <b>О страховании</b>
+            </h2>
+            <ul class = "icons">
+                <li class="object advantages specIcn">
+                    <img src="imgs/247.svg" class="bigIcon">
+                    <p class="objP">Oбращения к доктору 24/7</p>
+                </li>
+                <li class="object advantages specIcn">
+                    <img src="imgs/calendar.svg" class="bigIcon">
+                    <p class="objP">Oбращения к врачам-специалистам</p>
+                </li>
+                <li class="object advantages specIcn">
+                    <img src="imgs/security.svg" class="bigIcon">
+                    <p class="objP">Защита от несчастного случая + медицинский онлайн-сервис</p>
+                </li>
+                <li class="object advantages specIcn">
+                    <img src="imgs/microscope.svg" class="bigIcon">
+                    <p class="objP">Лабораторные исследования</p>
+                </li>
+                <li class="object advantages specIcn">
+                    <img src="imgs/batterfly.svg" class="bigIcon">
+                    <p class="objP">Упрощенная система страхования</p>
+                </li>
+            </ul>
+        </div>
+        <div class="center">
+            <h2 class="text">
+                <b>Условия которые мы предоставим вам</b>
+            </h2>
+            <ul class="icons">
+                <li><img src="imgs/doctors.svg"></li>
+                <li>
+                    <h1 class="text bigTxt"><b>20+</b></h1>
+                    <p class="bigDiscr">Высококвалифицированных врачей к которым вы можете обращаться <b>24/7</b></p>
+                </li>
+            </ul>
+            <ul class="icons">
+                <li>
+                    <img src="imgs/star.svg" class="markedIcn">
+                    <h3>BestDoctor</h3>
+                    <p class="bigDiscr">Доступ в один из лучших медицинских сервисов в России</p>
+                </li>
+                <li><img src="imgs/phone.svg"></li>
+            </ul>
+            <ul class="icons">
+                <li><img src="imgs/runner.svg"></li>
+                <li>
+                    <h1 class="text bigTxt" style="min-width: 300px;"><b>600 000₽</b></h1>
+                    <p class="bigDiscr">Сумма страховой защиты от нещастного случая</p>
+                </li>
+            </ul>
+        </div>
+        <div class="center" style="margin-bottom: 0px; max-width: 765px;">
+            <h2 class="text" style="max-width: 644px; align-items: center;">
+                <b>Что делать, если произошел страховой случай?</b>
+            </h2>
+            <ul class = "icons">
+                <li class="object advantages border">
+                    <img src="imgs/phonecall.svg" class="bigIcon">
+                    <p class="objP">Позвоните нам</p>
+                </li>
+                <li class="object advantages border hoverIcn" onmouseenter="showWin()" onmouseleave="showWin()">
+                    <img src="imgs/doc.svg" class="bigIcon">
+                    <p class="objP">Заполните заявление</p>
+                </li>
+                <li class="object advantages border">
+                    <img src="imgs/check.svg" class="bigIcon">
+                    <p class="objP">Узнайте статус решения вопроса</p>
+                </li>
+                <li class="object advantages border">
+                    <img src="imgs/box.svg" class="bigIcon">
+                    <p class="objP">Полный архив всех условий</p>
+                </li>
+            </ul>
+        </div>
+        <div class="imCont center">
+            <div class="imageCont center">
+                <ul class="iconsVis">
+                    <li class="objP someText">Заполните заявление и подготовьте необходимые документы.<br> <br>Направьте документы в Страховую компанию удобным для Вас способом:
+                        <ul class="specText">
+                            <li class="objPItem">через <div class="LK">Личный кабинет</div></li>
+                            <li class="objPItem">письмом по адресу: 125252, г. Москва, а/я 28</li>
+                        </ul>
+                    </li>
+                    <li style="width: 320px; height: 153px; text-align: left; margin-right: 100px;" >
+                        <ul>Список необходимых документов для заключения договора:
+                            <li class="objPItem">паспорт</li>
+                            <li class="objPItem">заявление на страхование</li>
+                            <li class="objPItem">иные документы - по запросу компании</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="center" style="max-width: 644px;">
+            <h2>
+                <b>Посмотреть полную презентацию продукта</b>
+            </h2>
+            <div class="button">
+                <h2 class="buttonTXT text"><b>Скачать PDF </b></h2>
+            </div>
+
+                <h3>Магазин услуг</h3>
+                <h5><a href="admin.php?id=1">Редактировать содержимое магазина</a></h2>
+                <div class="products">
+                    <?php
+                    foreach($items as $item)
+                    {?>
+
+                    <div class="product">
+                        <img src=<?php echo $item['img'];?> >
+                        <p>Страховка <?php echo $item['Name']?> </p>
+                        <p>За <?php echo $item['Price']?> рублей</p>
+                        <p>Время выполнения <?php echo $item['HoursToApply']?> ч.</p>
+                        <button class="buyBtn">Застраховать</button>
+                    </div>
+                    
+                    <?php } ?>
+                    
+                    
+                </div>
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div class="categories">
+            <li class="footerElem">
+                    <div class="headers footerCat text">
+                        <div class="footItem">
+                            Главная
+                        </div>
+                        <div class="footItem">
+                            О нас
+                        </div>
+                        <div class="footItem">
+                            Новости
+                        </div>
+                        <div class="footItem">
+                            Спецпредложения
+                        </div>
+                        <div class="footItem">
+                            Бизнес предложения
+                        </div>
+                        <div class="footItem">
+                            Твоё будущее
+                        </div>
+                        <div class="footItem">
+                            Защита себя и близких
+                        </div>
+                        <div class="footItem">
+                            Защита сотрудников
+                        </div>
+                    </div> 
+            </li>
+            <li class="footerElem">
+                    <div class="headers footerCat text">
+                        <div class="footItem" style="line-height: 25px; margin-bottom: 15px;">
+                            Страховая документация
+                        </div>
+                        <div class="footItem" style="line-height: 25px;margin-bottom: 15px;">
+                            Финансовые<br> показатели
+                        </div>
+                        <div class="footItem">
+                            Контакты
+                        </div>
+                        <div class="footItem">
+                            Карта сайта
+                        </div>
+                    </div> 
+            </li>
+            <li class="footerElem">
+                <ul style="list-style: none; padding: 0%;">
+                    <li class="footerAdress text">
+                        125252, г. Москва, ул. Зорге, д. 22 А, офис 811
+                    </li>
+                    <li class="footerAdress text">
+                        График работы главного офиса 125252, г. Москва, ул. Зорге, д. 22 А, офис 811 Пн. - Чт. с 9:00 до 18:00 Пт. с 9:00 до 16:45 Сб-Вс выходной
+                    </li>
+                    <li>
+                        <div class="button footerBtn" style="min-width: 265px; padding: 5px 20px;">
+                            <h2 class="buttonTXT"><b>КАК ДОБРАТЬСЯ</b></h2>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="footerElem text">
+                <ul style="list-style: none; padding: 0;">
+                    <li class = "footerAdress">
+                        Адрес для почтовых отправлений: 125252, г. Москва, а/я 28
+                    </li>
+                    <li class="telText text" style="color: white;">тел.: +7 495 967 13 01</li>
+                    <li class="mailText text">Email для связи с нами <b><u>info@prolife.ru</u></b></li>
+                    <li>
+                        <ul class = "footerIcons">
+                            <li><img src="imgs/VK.svg" class="icon"></li>
+                            <li><img src="imgs/Telegram.svg" class="icon"></li>
+                            <li><img src="imgs/Facebook.svg" class="icon"></li>
+                            <li><img src="imgs/Instagram.svg" class="icon"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </footer>
+    <script>
+        const win = document.querySelector(".imageCont");
+        function showWin(){
+            if(win.style.display != "block"){
+                win.style.display = "block";
+            }
+            else{
+                win.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
