@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    
+    
+    <item ID="0">
+    <Name> AMooooOGUS</Name>
+    <Price>67</Price>
+    <HoursToApply>545</HoursToApply>
+    <img>"imgs/among-us.svg"</img>
+    </item>
+    
+    <item ID="1">
+    <Name> SUS</Name>
+    <Price>1111</Price>
+    <HoursToApply>484</HoursToApply>
+    <img>"imgs/among-us.svg"</img>
+    </item>
+
+    <item ID="2">
+    <Name> AMOGUS</Name>
+    <Price>12</Price>
+    <HoursToApply>24</HoursToApply>
+    <img>"imgs/among-us.svg"</img>
+    </item>
+
+    <item ID="3">
+    <Name> GUS</Name>
+    <Price>484784</Price>
+    <HoursToApply>154846</HoursToApply>
+    <img>"imgs/among-us.svg"</img>
+    </item>
+    
+<item ID="1"><Name>asd</Name><Price>asd</Price><HoursToApply>asd</HoursToApply><img>imgs/among-us.svg</img></item><item ID="1"><Name>fsdg</Name><Price>dfg</Price><HoursToApply>dfg</HoursToApply><img>imgs/among-us.svg</img></item></root>
